@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Geek Library</string>
+    <string name="txt_add_book">Add book</string>
+    <string name="txt_add_movie">Add movie</string>
+    <string name="txt_add_serie">Add serie</string>
+    <string name="txt_update_book">Update book</string>
+    <string name="txt_update_movie">Update movie</string>
+    <string name="txt_update_serie">Update serie</string>
+    <string name="txt_book_details">Book details</string>
+    <string name="txt_movie_details">Movie details</string>
+    <string name="txt_serie_details">Serie details</string>
+
+    <string name="txt_books">Books</string>
+    <string name="txt_movies">Movies</string>
+    <string name="txt_series">Series</string>
+
+    <!-- Buttons-->
+    <string name="txt_ok">OK</string>
+    <string name="txt_add">Add</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_cancel">Cancel</string>
+
+    <!-- Elements data -->
+    <string name="txt_name">Name</string>
+    <string name="txt_author">Author</string>
+    <string name="txt_pageNum">Page Number</string>
+    <string name="txt_start_date">Start date</string>
+    <string name="txt_end_date">End date</string>
+    <string name="txt_seasonNum">Season Number</string>
+    <string name="txt_rate">Rate</string>
+    <string name="txt_is_favorite">Favorite</string>
+    <string name="txt_is_finished">Finished</string>
+
+    <string name="txt_select_type">Select type</string>
+    <string name="txt_current_readings">Current readings</string>
+    <string name="txt_finished_readings">Finished readings</string>
+    <string name="txt_pages">pages</string>
+    <string name="txt_current_watching">Current watching</string>
+    <string name="txt_finished_watching">Finished watching</string>
+    <string name="txt_season">Season</string>
+    <string name="txt_delete_element">Delete element</string>
+    <string name="txt_delete_element_dialog_text">Do you want to delete this element?</string>
+    <string name="txt_pages_placeholder">%1$s pages</string>
+    <string name="txt_reading_time_placeholder">Reading time: %1$s days</string>
+    <string name="txt_watching_time_placeholder">Watching time: %1$s days</string>
+    <string name="txt_season_placeholder">season %1$s</string>
+    <string name="txt_empty_value">---</string>
+    <string name="txt_not_current_readings">Not current readings</string>
+    <string name="txt_not_readings">Not readings registered</string>
+    <string name="txt_not_current_watching">Not current watching series</string>
+    <string name="txt_not_watching">Not watching registered</string>
+
+    <string-array name="tabsTitles">
+        <item>Books</item>
+        <item>Movies</item>
+        <item>Series</item>
+    </string-array>
+</resources>

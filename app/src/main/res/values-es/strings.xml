@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Librería Geek</string>
+    <string name="txt_add_book">Agregar libro</string>
+    <string name="txt_add_movie">Agregar película</string>
+    <string name="txt_add_serie">Agregar serie</string>
+    <string name="txt_update_book">Actualizar libro</string>
+    <string name="txt_update_movie">Actualizar película</string>
+    <string name="txt_update_serie">Actualizar serie</string>
+    <string name="txt_book_details">Detalles del libro</string>
+    <string name="txt_movie_details">Detalles de la película</string>
+    <string name="txt_serie_details">Detalles de la serie</string>
+
+    <string name="txt_books">Libros</string>
+    <string name="txt_movies">Peliculas</string>
+    <string name="txt_series">Series</string>
+
+    <!-- Buttons-->
+    <string name="txt_ok">Aceptar</string>
+    <string name="txt_add">Agregar</string>
+    <string name="txt_save">Guardar</string>
+    <string name="txt_cancel">Cancelar</string>
+
+    <!-- Elements data -->
+    <string name="txt_name">Nombre</string>
+    <string name="txt_author">Autor</string>
+    <string name="txt_pageNum">Número de páginas</string>
+    <string name="txt_start_date">Fecha de inicio</string>
+    <string name="txt_end_date">Fecha de terminación</string>
+    <string name="txt_seasonNum">Número de temporada</string>
+    <string name="txt_rate">Calificación</string>
+    <string name="txt_is_favorite">Favoritos</string>
+    <string name="txt_is_finished">Terminado/a</string>
+
+    <string name="txt_select_type">Seleccionar tipo</string>
+    <string name="txt_current_readings">Lecturas actuales</string>
+    <string name="txt_finished_readings">Lecturas terminadas</string>
+    <string name="txt_pages">páginas</string>
+    <string name="txt_current_watching">Viendo actualmente</string>
+    <string name="txt_finished_watching">Visto anteriormente</string>
+    <string name="txt_season">Temporada</string>
+    <string name="txt_delete_element">Eliminar elemento</string>
+    <string name="txt_delete_element_dialog_text">¿Quiere eliminar este elemento?</string>
+    <string name="txt_pages_placeholder">%1$s páginas</string>
+    <string name="txt_reading_time_placeholder">Tiempo de lectura: %1$s días</string>
+    <string name="txt_watching_time_placeholder">Tiempo de visualización: %1$s días</string>
+    <string name="txt_season_placeholder">Temporada %1$s</string>
+    <string name="txt_empty_value">---</string>
+    <string name="txt_not_current_readings">No hay lecturas actuales</string>
+    <string name="txt_not_readings">No hay lecturas registradas</string>
+    <string name="txt_not_current_watching">No hay visualizaciones actuales</string>
+    <string name="txt_not_watching">No hay visualizaciones registradas</string>
+
+    <string-array name="tabsTitles">
+        <item>Libros</item>
+        <item>Péliculas</item>
+        <item>Series</item>
+    </string-array>
+</resources>
