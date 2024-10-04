@@ -22,6 +22,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.geeklibrary.R
@@ -54,7 +55,8 @@ fun CurrentWatchingCard(
                 text = serie.name,
                 fontWeight = FontWeight.Bold,
                 style = MaterialTheme.typography.titleLarge,
-                fontSize = 20.sp,
+                fontSize = 19.sp,
+                color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.padding(bottom = 6.dp)
             )
 
@@ -161,8 +163,9 @@ fun <T> MovieSerieItemCard(
                     text = name,
                     fontWeight = FontWeight.Bold,
                     style = MaterialTheme.typography.titleLarge,
-                    fontSize = 20.sp,
-                    modifier = Modifier.weight(4f)
+                    fontSize = 19.sp,
+                    color = MaterialTheme.colorScheme.primary,
+                    modifier = Modifier.weight(3f)
 
                 )
                 Text(
@@ -170,7 +173,10 @@ fun <T> MovieSerieItemCard(
                     fontWeight = FontWeight.Normal,
                     style = MaterialTheme.typography.labelMedium,
                     fontSize = 16.sp,
-                    modifier = Modifier.weight(0.5f),
+                    textAlign = TextAlign.End,
+                    modifier = Modifier
+                        .weight(1f)
+                        .align(Alignment.Top),
                     color = Color.Gray
                 )
             }

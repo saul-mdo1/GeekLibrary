@@ -22,6 +22,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.geeklibrary.R
@@ -52,7 +53,8 @@ fun CurrentReadingCard(
                 text = book.title,
                 fontWeight = FontWeight.Bold,
                 style = MaterialTheme.typography.titleLarge,
-                fontSize = 20.sp,
+                fontSize = 19.sp,
+                color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.padding(bottom = 6.dp)
             )
             Text(
@@ -151,8 +153,9 @@ fun BookItemCard(
                     text = book.title,
                     fontWeight = FontWeight.Bold,
                     style = MaterialTheme.typography.titleLarge,
-                    fontSize = 20.sp,
-                    modifier = Modifier.weight(4f)
+                    fontSize = 19.sp,
+                    color = MaterialTheme.colorScheme.primary,
+                    modifier = Modifier.weight(3f)
                 )
 
                 Text(
@@ -160,7 +163,10 @@ fun BookItemCard(
                     fontWeight = FontWeight.Normal,
                     style = MaterialTheme.typography.labelMedium,
                     fontSize = 16.sp,
-                    modifier = Modifier.weight(0.5f),
+                    textAlign = TextAlign.End,
+                    modifier = Modifier
+                        .weight(1f)
+                        .align(Alignment.Top),
                     color = Color.Gray
                 )
             }
