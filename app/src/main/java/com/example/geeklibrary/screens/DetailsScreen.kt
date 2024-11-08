@@ -93,7 +93,7 @@ fun DetailsScreen(navController: NavController, vm: MainViewModel, type: Int?, e
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
-                .background(MaterialTheme.colorScheme.secondaryContainer)
+                .background(Color(0xFFEFEFEF))
                 .padding(8.dp)
         ) {
             // ELEMENT NAME

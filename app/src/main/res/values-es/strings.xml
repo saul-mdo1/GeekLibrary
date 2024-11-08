@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Librería Geek</string>
+    <string name="app_name">Geek Library</string>
     <string name="txt_add_book">Agregar libro</string>
     <string name="txt_add_movie">Agregar película</string>
     <string name="txt_add_serie">Agregar serie</string>

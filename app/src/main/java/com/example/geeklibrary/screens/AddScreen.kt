@@ -90,7 +90,7 @@ private fun AddForm(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(MaterialTheme.colorScheme.secondaryContainer)
+            .background(Color(0xFFEFEFEF))
             .padding(innerPadding)
             .padding(start = 15.dp, top = 10.dp, end = 15.dp, bottom = 10.dp)
             .verticalScroll(rememberScrollState())

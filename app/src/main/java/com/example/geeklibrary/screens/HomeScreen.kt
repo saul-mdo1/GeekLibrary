@@ -110,7 +110,7 @@ fun HomeScreen(navController: NavController, viewModel: MainViewModel, initialTa
             Box(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(MaterialTheme.colorScheme.secondaryContainer)
+                    .background(Color(0xFFEFEFEF))
                     .padding(8.dp)
             ) {
                 when (tabIndex) {
