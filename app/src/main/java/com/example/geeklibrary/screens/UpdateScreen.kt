@@ -53,6 +53,7 @@ import com.example.geeklibrary.model.ElementType
 import com.example.geeklibrary.model.Movie
 import com.example.geeklibrary.model.Series
 import com.example.geeklibrary.utils.StarRatingBar
+import com.example.geeklibrary.utils.currentDate
 import com.example.geeklibrary.viewModel.MainViewModel
 
 @Composable
@@ -158,40 +159,40 @@ private fun UpdateForm(
         val movie by vm.movie.collectAsState()
         val serie by vm.serie.collectAsState()
 
-        LaunchedEffect(book, movie, serie){
-        when (elementType) {
-            ElementType.BOOK -> {
-                name = book?.title ?: ""
-                author = book?.author ?: ""
-                pagesNum = book?.pageNumber.toString()
-                startDate = book?.startDate ?: ""
-                endDate = book?.endDate ?: ""
-                rating = book?.rate ?: 1f
-                isFavorite = book?.isFavorite ?: false
-                isFinished = book?.currentReading == false
-            }
+        LaunchedEffect(book, movie, serie) {
+            when (elementType) {
+                ElementType.BOOK -> {
+                    name = book?.title ?: ""
+                    author = book?.author ?: ""
+                    pagesNum = book?.pageNumber.toString()
+                    startDate = book?.startDate ?: ""
+                    endDate = book?.endDate ?: ""
+                    rating = book?.rate ?: 1f
+                    isFavorite = book?.isFavorite ?: false
+                    isFinished = book?.currentReading == false
+                }
 
-            ElementType.MOVIE -> {
-                name = movie?.name ?: ""
-                startDate = movie?.startDate ?: ""
-                endDate = movie?.endDate ?: ""
-                rating = movie?.rate ?: 1f
-                isFavorite = movie?.isFavorite ?: false
-                isFinished = true
-            }
+                ElementType.MOVIE -> {
+                    name = movie?.name ?: ""
+                    startDate = movie?.startDate ?: ""
+                    endDate = movie?.endDate ?: ""
+                    rating = movie?.rate ?: 1f
+                    isFavorite = movie?.isFavorite ?: false
+                    isFinished = true
+                }
 
-            ElementType.SERIE -> {
-                name = serie?.name ?: ""
-                seasonNum = serie?.seasonNum ?: ""
-                startDate = serie?.startDate ?: ""
-                endDate = serie?.endDate ?: ""
-                rating = serie?.rate ?: 1f
-                isFavorite = serie?.isFavorite ?: false
-                isFinished = serie?.currentWatching == false
+                ElementType.SERIE -> {
+                    name = serie?.name ?: ""
+                    seasonNum = serie?.seasonNum ?: ""
+                    startDate = serie?.startDate ?: ""
+                    endDate = serie?.endDate ?: ""
+                    rating = serie?.rate ?: 1f
+                    isFavorite = serie?.isFavorite ?: false
+                    isFinished = serie?.currentWatching == false
+                }
             }
         }
-        }
-        
+
         //region TITLE
         Title(elementType = elementType, isUpdate = true)
         //endregion
@@ -281,8 +282,12 @@ private fun UpdateForm(
         ) {
             Checkbox(
                 checked = isFinished,
-                onCheckedChange = {
-                    isFinished = !isFinished
+                onCheckedChange = { checked ->
+                    isFinished = checked
+                    endDate = if (checked)
+                        currentDate()
+                    else
+                        ""
                 }
             )
             Text(
